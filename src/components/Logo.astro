@@ -1,0 +1,92 @@
+---
+interface Props {}
+---
+
+<input id="logo-check" class="anim-logo" type="checkbox"></input>
+<label for="logo-check" class="anim-logo">
+  <svg width="455" height="408" viewBox="0 0 455 408" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_10_213)">
+      <ellipse cx="192.684" cy="185.607" rx="182.684" ry="185.607" fill="white"/>
+    </g>
+    <g filter="url(#filter1_d_10_213)">
+      <path d="M314.474 255.289L436.173 369.467H192.774L314.474 255.289Z" fill="white"/>
+    </g>
+    <g filter="url(#filter2_d_10_213)">
+      <path class="left-bracket" d="M152.408 236.201L84.0953 204.627V184.466L152.408 152.476V174.053L107.921 194.297V194.963L152.408 214.874V236.201Z" fill="black"/>
+      <path class="slash" d="M153.907 271.94L211.306 108.49H230.384L172.652 271.94H153.907Z" fill="black"/>
+      <path class="right-bracket" d="M233.3 236.201V214.874L277.869 194.963V194.297L233.3 174.053V152.476L301.612 184.466V204.627L233.3 236.201Z" fill="black"/>
+    </g>
+    <defs>
+      <filter id="filter0_d_10_213" x="0.631579" y="0" width="384.105" height="389.951" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="9.36842"/>
+        <feGaussianBlur stdDeviation="4.68421"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_10_213"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10_213" result="shape"/>
+      </filter>
+      <filter id="filter1_d_10_213" x="183.406" y="255.289" width="262.135" height="132.914" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="9.36842"/>
+        <feGaussianBlur stdDeviation="4.68421"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_10_213"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10_213" result="shape"/>
+      </filter>
+        <filter id="filter2_d_10_213" x="74.7268" y="108.49" width="236.254" height="182.187" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="9.36842"/>
+        <feGaussianBlur stdDeviation="4.68421"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_10_213"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10_213" result="shape"/>
+      </filter>
+    </defs>
+  </svg>
+</label>
+<style>
+	input.anim-logo {
+    display: none;
+  }
+  label.anim-logo {
+    cursor: pointer;
+    user-select: none;
+  }
+  label.anim-logo svg {
+    width: 10vw;
+    height: 10vh;
+  }
+  label.anim-logo svg path.right-bracket {
+    transform: rotate(0deg);
+    transition: transform 1s;
+    transform-origin: 53% 44%;
+  }
+  input.anim-logo:checked +
+  label.anim-logo svg path.right-bracket {
+    transform: rotate(-90deg);
+  }
+  label.anim-logo svg path.slash {
+    transform: rotate(0deg);
+    transition: transform 1s;
+    transform-origin: 34% 54%;
+  }
+  input.anim-logo:checked +
+  label.anim-logo svg path.slash {
+    transform: rotate(70deg);
+  }
+  label.anim-logo svg path.left-bracket {
+    transform: rotate(0deg);
+    transition: transform 1s;
+    transform-origin: 32% 45%;
+  }
+  input.anim-logo:checked +
+  label.anim-logo svg path.left-bracket {
+    transform: rotate(90deg);
+  }
+</style>
