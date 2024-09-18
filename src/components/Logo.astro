@@ -13,7 +13,21 @@ interface Props {}
     </g>
     <g filter="url(#filter2_d_10_213)">
       <path class="left-bracket" d="M212.581 236.201L144.2683 204.627V184.466L212.581 152.476V174.053L168.094 194.297V194.963L212.581 214.874V236.201Z" fill="black"/>
-      <path class="slash" d="M214.08 271.94L271.479 108.49H290.557L232.825 271.94H214.08Z" fill="black"/>
+      <!-- <path class="slash" d="M214.08 271.94L271.479 108.49H290.557L232.825 271.94H214.08Z" fill="black"/> -->
+      <path class="slash1" d="
+        M214.08 271.94
+        L242.7795 190.215
+        H261.691
+        L232.825 271.94
+        H214.08
+        Z" fill="black"/>
+      <path class="slash2" d="
+        M242.7795 190.215
+        L271.479 108.49
+        H290.557
+        L261.691 190.215
+        H242.7795
+        Z" fill="black"/>
       <path class="right-bracket" d="M293.473 236.201V214.874L338.042 194.963V194.297L293.473 174.053V152.476L361.785 184.466V204.627L293.473 236.201Z" fill="black"/>
     </g>
     <defs>
@@ -71,14 +85,23 @@ interface Props {}
   label.anim-logo svg path.right-bracket {
     transform: rotate(-90deg);
   }
-  label.anim-logo svg path.slash {
+  label.anim-logo svg path.slash1 {
     transform: rotate(0deg);
     transition: transform 1s;
-    transform-origin: 46% 53%;
+    transform-origin: 48% 54%;
   }
   input.anim-logo:checked +
-  label.anim-logo svg path.slash {
-    transform: rotate(70deg);
+  label.anim-logo svg path.slash1 {
+    transform: rotate(90deg);
+  }
+  label.anim-logo svg path.slash2 {
+    transform: rotate(0deg);
+    transition: transform 1s;
+    transform-origin: 39% 52%;
+  }
+  input.anim-logo:checked +
+  label.anim-logo svg path.slash2 {
+    transform: rotate(50deg);
   }
   label.anim-logo svg path.left-bracket {
     transform: rotate(0deg);
