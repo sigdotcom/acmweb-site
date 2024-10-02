@@ -1,12 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import Logo from '../components/Logo.astro';
+import Navbar from '../components/Navbar.astro';
 ---
 
 <Layout title="ACM Web">
-	<main>
-    <!-- <Logo/> -->
+  <Navbar/>
+	<main id="start">
 		<svg
 			class="astro-a"
 			width="495"
@@ -63,6 +63,9 @@ import Logo from '../components/Logo.astro';
 			/>
 		</ul>
 	</main>
+  <div id="about" style="height: 100vh; border: 3px solid red; color: white;">About Section</div>
+  <div id="contact" style="height: 100vh; border: 3px solid red; color: white;">Contact Section</div>
+  <div id="join" style="height: 100vh; border: 3px solid red; color: white;">Join Section</div>
 </Layout>
 
 <style>
@@ -123,3 +126,34 @@ import Logo from '../components/Logo.astro';
 		padding: 0;
 	}
 </style>
+
+<script is:inline>
+  (function() {
+    const navbar = document.getElementById("navbar-container");
+    const aboutSection = document.getElementById("about");
+
+    if(navbar === null || aboutSection === null) return;
+    
+    function setMargin(currentScroll) {
+      const navbarHeight = navbar.offsetHeight;
+      const endAppear = aboutSection.offsetTop;
+      const startAppear = endAppear - navbarHeight;
+
+      if(currentScroll <= startAppear) {
+        navbar.style.marginTop = `-${navbarHeight}px`;
+      } else if(currentScroll >= endAppear) {
+        navbar.style.marginTop = "0px";
+      } else {
+        let interpolatePercent = navbarHeight * (endAppear - currentScroll) / (endAppear - startAppear);
+        navbar.style.marginTop = `-${interpolatePercent}px`;
+      }
+    }
+
+    setMargin(window.scrollY);
+
+    document.addEventListener("scroll", (e) => {
+      setMargin(window.scrollY);
+    });
+
+  })();
+</script>
