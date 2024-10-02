@@ -38,25 +38,25 @@ interface Props {}
     flex: 1;
     align-items: center;
     justify-content: start;
-    font-size: 72px;
+    font-size: clamp(16px, 5vw, 72px);
     overflow: hidden;
   }
   .logo-container a {
-    font-size: 72px;
     color: #E7E6F6;
     font-weight: 500;
     text-shadow: 0px 4px 4px #00000040;
     margin-left: .25em;
   }
   .tab-container {
+    margin-right: 2vw;
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: end;
-    font-size: 44px;
+    font-size: clamp(14px, 4vw, 44px);
   }
   .tab-container a {
-    margin: .25em;
+    margin: 1vw;
     color: #FFFBFB;
     text-shadow: 0px 2.69px 2.69px #0000004D;
   }
