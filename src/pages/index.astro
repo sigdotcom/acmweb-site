@@ -130,13 +130,14 @@ import Navbar from '../components/Navbar.astro';
 <script is:inline>
   (function() {
     const navbar = document.getElementById("navbar-container");
+    const aboutSection = document.getElementById("about");
 
-    if(navbar === null) return;
+    if(navbar === null || aboutSection === null) return;
     
     function setMargin(currentScroll) {
-      const startAppear = 550;
-      const endAppear = 675;
-      const navbarHeight = 125;
+      const navbarHeight = navbar.offsetHeight;
+      const endAppear = aboutSection.offsetTop;
+      const startAppear = endAppear - navbarHeight;
 
       if(currentScroll <= startAppear) {
         navbar.style.marginTop = `-${navbarHeight}px`;
