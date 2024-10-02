@@ -126,3 +126,33 @@ import Navbar from '../components/Navbar.astro';
 		padding: 0;
 	}
 </style>
+
+<script is:inline>
+  (function() {
+    const navbar = document.getElementById("navbar-container");
+
+    if(navbar === null) return;
+    
+    function setMargin(currentScroll) {
+      const startAppear = 550;
+      const endAppear = 700;
+      const navbarHeight = 125;
+
+      if(currentScroll <= startAppear) {
+        navbar.style.marginTop = `-${navbarHeight}px`;
+      } else if(currentScroll >= endAppear) {
+        navbar.style.marginTop = "0px";
+      } else {
+        let interpolatePercent = navbarHeight * (endAppear - currentScroll) / (endAppear - startAppear);
+        navbar.style.marginTop = `-${interpolatePercent}px`;
+      }
+    }
+
+    setMargin(window.scrollY);
+
+    document.addEventListener("scroll", (e) => {
+      setMargin(window.scrollY);
+    });
+
+  })();
+</script>
