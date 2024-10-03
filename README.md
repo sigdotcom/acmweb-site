@@ -37,4 +37,4 @@ git push
 
 These will add and commit your changes locally, then send those changes to the corresponding branch here.
 
-For more practice, a git tutorial is located [here](https://learngitbranching.js.org/?locale=en_US).
+For more practicing using git, a tutorial is located [here](https://learngitbranching.js.org/?locale=en_US).
