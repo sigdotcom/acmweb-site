@@ -2,15 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Home from './home.astro';
+import About from './about.astro';
+import Contact from './contact.astro';
+import Join from './join.astro';
 ---
 
 <Layout title="ACM Web">
 <main>
   <Navbar/>
   <Home/>
-  <div id="about" style="height: 100vh; border: 3px solid red;">About Section</div>
-  <div id="contact" style="height: 100vh; border: 3px solid red;">Contact Section</div>
-  <div id="join" style="height: 100vh; border: 3px solid red;">Join Section</div>
+  <About/>
+  <Contact/>
+  <Join/>
 </main>
 </Layout>
 
