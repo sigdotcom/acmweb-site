@@ -1,20 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar.astro';
-import Button from '../components/button.astro';
+import Home from './home.astro';
 ---
 
 <Layout title="ACM Web">
 <main>
   <Navbar/>
-  <div id="main" style="height: 100vh; border: 3px solid red; color: white;">
-	<h1>ACM WEB</h1>
-	<Button/>
-  </div>
-  <div id="about" style="height: 100vh; border: 3px solid red; color: white;">About Section</div>
-  <div id="contact" style="height: 100vh; border: 3px solid red; color: white;">Contact Section</div>
-  <div id="join" style="height: 100vh; border: 3px solid red; color: white;">Join Section</div>
+  <Home/>
+  <div id="about" style="height: 100vh; border: 3px solid red;">About Section</div>
+  <div id="contact" style="height: 100vh; border: 3px solid red;">Contact Section</div>
+  <div id="join" style="height: 100vh; border: 3px solid red;">Join Section</div>
 </main>
 </Layout>
 
@@ -38,7 +34,7 @@ import Button from '../components/button.astro';
       const startAppear = endAppear - navbarHeight;
 
       if(currentScroll <= startAppear) {
-        navbar.style.marginTop = `-${navbarHeight}px`;
+        navbar.style.marginTop = `-${navbarHeight + 10}px`;
       } else if(currentScroll >= endAppear) {
         navbar.style.marginTop = "0px";
       } else {
