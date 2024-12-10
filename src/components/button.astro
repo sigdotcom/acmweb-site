@@ -1,11 +1,15 @@
 ---
-interface Props {}
+interface Props {
+  label: string;
+}
+
+const { label } = Astro.props;
 ---
 
 <div id="ButtonContainer">
-  <button id="startButton">
-    Start
-  </button>
+  <a id="startButton">
+    {label}
+  </a>
 </div>
 
 <style>
@@ -22,6 +26,10 @@ interface Props {}
     text-shadow: 2px 2px 2.5px black;
     box-shadow: 5px, 5px, 3px black;
     letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 #startButton:active{
