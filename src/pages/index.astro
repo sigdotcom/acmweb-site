@@ -8,17 +8,22 @@ import Join from './join.astro';
 ---
 
 <Layout title="ACM Web">
-<main>
+  <div class="bg-gradient"></div>
   <Navbar/>
   <Home/>
   <About/>
   <Contact/>
   <Join/>
-</main>
 </Layout>
 
 <style>
-	main{
+	.bg-gradient {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
 		background: rgb(52,37,114);
 		background: linear-gradient(180deg, rgba(52,37,114,1) 0%, rgba(47,39,57,1) 100%);
 	}
