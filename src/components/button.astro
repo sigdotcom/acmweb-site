@@ -1,13 +1,15 @@
 ---
+
 interface Props {
   label: string;
+  href: string;
 }
 
-const { label } = Astro.props;
+const { label, href } = Astro.props;
 ---
 
 <div id="ButtonContainer">
-  <a id="startButton">
+  <a href={href} id="startButton">
     {label}
   </a>
 </div>
