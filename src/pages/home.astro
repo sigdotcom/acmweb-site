@@ -10,14 +10,16 @@ import Logo from "../components/Logo.astro"
     </a>
   </div>
   <Logo/>
-  <div class="float f1">&ltdiv&gt</div>
-  <div class="float f2">&ltnav&gt</div>
-  <div class="float f3">&ltsection&gt</div>
-  <div class="float f4">&ltp1&gt</div>
-  <div class="float f5">&ltp2&gt</div>
-  <div class="float f6">&ltbody&gt</div>
-  <div class="float f7">&lth1&gt</div>
-  <div class="float f8">&lta&gt</div>
+  <div class="float f1">&lthr&gt</div>
+  <div class="float f2">&ltpre&gt</div>
+  <div class="float f3">&ltheader&gt</div>
+  <div class="float f4">&ltfooter&gt</div>
+  <div class="float f5">&ltdiv&gt</div>
+  <div class="float f6">&ltp&gt</div>
+  <div class="float f7">&lthtml&gt</div>
+  <div class="float f8">&ltul&gt</div>
+  <div class="float f9">&lth1&gt</div>
+  <div class="float f10">&lth3&gt</div>
 </div>
 
 <style>
@@ -75,14 +77,16 @@ import Logo from "../components/Logo.astro"
     font-size: xx-large;
     font-weight: lighter;
   }
-  .f1 { top: 30vh; left: 20vw; animation: float 4.1s ease-in-out infinite; }
-  .f2 { top: 80vh; left: 60vw; animation: float 4.2s ease-in-out infinite; }
+  .f1 { top: 5vh; left: 25vw; animation: float 4.1s ease-in-out infinite; }
+  .f2 { top: 10vh; left: 60vw; animation: float 4.2s ease-in-out infinite; }
   .f3 { top: 20vh; left: 80vw; animation: float 4.3s ease-in-out infinite; }
-  .f4 { top: 90vh; left: 30vw; animation: float 4.4s ease-in-out infinite; }
-  .f5 { top: 10vh; left: 60vw; animation: float 4.5s ease-in-out infinite; }
-  .f6 { top: 60vh; left: 80vw; animation: float 4.6s ease-in-out infinite; }
-  .f7 { top: 60vh; left: 10vw; animation: float 4.7s ease-in-out infinite; }
-  .f8 { top: 10vh; left: 15vw; animation: float 4.8s ease-in-out infinite; }
+  .f4 { top: 30vh; left: 10vw; animation: float 4.4s ease-in-out infinite; }
+  .f5 { top: 60vh; left: 8vw; animation: float 4.5s ease-in-out infinite; }
+  .f6 { top: 80vh; left: 15vw; animation: float 4.6s ease-in-out infinite; }
+  .f7 { top: 90vh; left: 25vw; animation: float 4.7s ease-in-out infinite; }
+  .f8 { top: 80vh; left: 75vw; animation: float 4.8s ease-in-out infinite; }
+  .f9 { top: 70vh; left: 85vw; animation: float 4.9s ease-in-out infinite; }
+  .f10 { top: 90vh; left: 87vw; animation: float 5s ease-in-out infinite; }
   @keyframes float {
     0%, 100% {
       transform: translateY(0);
