@@ -1,6 +1,36 @@
----
----
-
-<div id="about" style="height: 100vh; border: 3px solid red;">
-  <h1>About</h1>
+<div id="about" class="container">
+  <span class="title">WHO ARE WE?</span>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales dolor vel lobortis porta. Donec mollis ante sed rhoncus lobortis. Nunc pharetra blandit lorem, et porttitor nisl scelerisque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus imperdiet tempus nibh quis tempor. Aliquam erat volutpat. In maximus ullamcorper auctor. Donec tincidunt id orci et varius.</p>
+  <div class="placeholder"></div>
 </div>
+
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .title {
+    font-size: 72.85px;
+    font-weight: 500;
+    line-height: 107.96px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+  }
+  p {
+    width: 50vw;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35.57px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+  }
+  .placeholder {
+    width: 36vw;
+    height: 21vw;
+    border-radius: 30px;
+    border: 5px solid #FFFFFF
+  }
+</style>
