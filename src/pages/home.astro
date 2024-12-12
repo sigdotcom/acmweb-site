@@ -1,3 +1,7 @@
+---
+import Logo from "../components/Logo.astro"
+---
+
 <div id="start" class="container">
   <span class="title">ACM WEB</span>
   <div class="start-container">
@@ -5,6 +9,7 @@
       Start
     </a>
   </div>
+  <Logo/>
   <div class="float f1">&ltdiv&gt</div>
   <div class="float f2">&ltnav&gt</div>
   <div class="float f3">&ltsection&gt</div>
@@ -55,6 +60,7 @@
       justify-content: center;
       text-decoration: none;
       line-height: 0;
+      margin-bottom: .5em;
   }
   .start-button:active{
       filter: brightness(85%);
