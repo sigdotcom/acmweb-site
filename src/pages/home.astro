@@ -5,6 +5,14 @@
       Start
     </a>
   </div>
+  <div class="float f1">&ltdiv&gt</div>
+  <div class="float f2">&ltnav&gt</div>
+  <div class="float f3">&ltsection&gt</div>
+  <div class="float f4">&ltp1&gt</div>
+  <div class="float f5">&ltp2&gt</div>
+  <div class="float f6">&ltbody&gt</div>
+  <div class="float f7">&lth1&gt</div>
+  <div class="float f8">&lta&gt</div>
 </div>
 
 <style>
@@ -48,12 +56,33 @@
       text-decoration: none;
       line-height: 0;
   }
-
   .start-button:active{
       filter: brightness(85%);
   }
-
   .start-button:hover{
       filter: brightness(85%);
+  }
+  .float {
+    position: absolute;
+    animation: float 4s ease-in-out infinite;
+    color: white;
+    font-size: xx-large;
+    font-weight: lighter;
+  }
+  .f1 { top: 30vh; left: 20vw; animation: float 4.1s ease-in-out infinite; }
+  .f2 { top: 80vh; left: 60vw; animation: float 4.2s ease-in-out infinite; }
+  .f3 { top: 20vh; left: 80vw; animation: float 4.3s ease-in-out infinite; }
+  .f4 { top: 90vh; left: 30vw; animation: float 4.4s ease-in-out infinite; }
+  .f5 { top: 10vh; left: 60vw; animation: float 4.5s ease-in-out infinite; }
+  .f6 { top: 60vh; left: 80vw; animation: float 4.6s ease-in-out infinite; }
+  .f7 { top: 60vh; left: 10vw; animation: float 4.7s ease-in-out infinite; }
+  .f8 { top: 10vh; left: 15vw; animation: float 4.8s ease-in-out infinite; }
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
 </style>
