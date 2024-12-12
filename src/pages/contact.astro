@@ -1,6 +1,64 @@
----
----
-
-<div id="contact" style="height: 100vh; border: 3px solid red;">
-  <h1>Contact Page</h1>
+<div id="contact" class="container">
+  <span class="title">CONTACT US</span>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales dolor vel lobortis porta. Donec mollis ante sed rhoncus lobortis. Nunc pharetra blandit lorem, </p>
+  <input placeholder="NAME"/>
+  <input placeholder="EMAIL"/>
+  <textarea placeholder="MESSAGE"/>
+  <button>SUBMIT</button>
 </div>
+
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .title {
+    font-size: 98.42px;
+    font-weight: 500;
+    line-height: 145.86px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+  }
+  p {
+    width: 30vw;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35.57px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+  }
+  input, textarea {
+    font-size: 29.36px;
+    font-weight: 400;
+    line-height: 43.5px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #6C6767;
+    background: #BEBEBE;
+    box-shadow: 0px 3.69px 3.69px 0px #00000040;
+    border-radius: 36px;
+    padding: 0 .75em;
+    margin-bottom: .5em;
+    width: 30vw;
+  }
+  textarea {
+    height: 10em;
+  }
+  button {
+    background: linear-gradient(180deg, #A6D4FF 0%, #5D5BC5 100%);
+    color: #FFFFFF;
+    font-size: 29.36px;
+    font-weight: 500;
+    line-height: 43.5px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    padding: 0 .75em;
+    gap: 1em;
+    border-radius: 50px;
+    width: 30vw;
+    text-align: center;
+  }
+</style>
