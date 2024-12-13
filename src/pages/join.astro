@@ -1,0 +1,74 @@
+---
+import Logo from "../components/Logo.astro"
+---
+
+<div id="join" class="container">
+  <span class="title">HOW TO JOIN</span>
+  <div class="row">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales dolor vel lobortis porta. 
+      Donec mollis ante sed rhoncus lobortis. Nunc pharetra blandit lorem, et porttitor nisl scelerisque vel. 
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+      Phasellus imperdiet tempus nibh quis tempor. Aliquam erat volutpat. In maximus ullamcorper auctor.
+      Donec tincidunt id orci et varius.
+    </p>
+    <Logo/>
+  </div>
+  <div class="float f1">&ltfooter&gt</div>
+  <div class="float f2">&ltp&gt</div>
+  <div class="float f3">&ltdiv&gt</div>
+  <div class="float f4">&ltmain&gt</div>
+  <div class="float f5">&lthtml&gt</div>
+  <div class="float f6">&ltscript&gt</div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .title {
+    font-size: 98.42px;
+    font-weight: 500;
+    line-height: 145.86px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+  }
+  p {
+    width: 30vw;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35.57px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    margin-right: 3em;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .float {
+    position: absolute;
+    animation: float 4s ease-in-out infinite;
+    color: white;
+    font-size: xx-large;
+    font-weight: lighter;
+  }
+  .f1 { top: 330vh; left: 10vw; animation: float 4.1s ease-in-out infinite; }
+  .f2 { top: 380vh; left: 15vw; animation: float 4.2s ease-in-out infinite; }
+  .f3 { top: 385vh; left: 40vw; animation: float 4.3s ease-in-out infinite; }
+  .f4 { top: 320vh; left: 85vw; animation: float 4.4s ease-in-out infinite; }
+  .f5 { top: 350vh; left: 90vw; animation: float 4.5s ease-in-out infinite; }
+  .f6 { top: 380vh; left: 80vw; animation: float 4.6s ease-in-out infinite; }
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+</style>

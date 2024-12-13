@@ -1,27 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar.astro';
-import Button from '../components/button.astro';
+import Home from './home.astro';
+import About from './about.astro';
+import Contact from './contact.astro';
+import Join from './join.astro';
 ---
 
 <Layout title="ACM Web">
-<main>
+  <div class="bg-gradient"></div>
   <Navbar/>
-  <div id="main" style="height: 100vh; border: 3px solid red; color: white;">
-	<h1>ACM WEB</h1>
-	<Button/>
-  </div>
-  <div id="about" style="height: 100vh; border: 3px solid red; color: white;">About Section</div>
-  <div id="contact" style="height: 100vh; border: 3px solid red; color: white;">Contact Section</div>
-  <div id="join" style="height: 100vh; border: 3px solid red; color: white;">Join Section</div>
-</main>
+  <Home/>
+  <About/>
+  <Contact/>
+  <Join/>
 </Layout>
 
 <style>
-	main{
-		background: rgb(52,37,114);
-		background: linear-gradient(180deg, rgba(52,37,114,1) 0%, rgba(47,39,57,1) 100%);
+	.bg-gradient {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+		background: linear-gradient(180deg, #342572 0%, #2F2739 100%);
 	}
 </style>
 
@@ -38,7 +41,7 @@ import Button from '../components/button.astro';
       const startAppear = endAppear - navbarHeight;
 
       if(currentScroll <= startAppear) {
-        navbar.style.marginTop = `-${navbarHeight}px`;
+        navbar.style.marginTop = `-${navbarHeight + 10}px`;
       } else if(currentScroll >= endAppear) {
         navbar.style.marginTop = "0px";
       } else {
