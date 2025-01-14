@@ -31,10 +31,10 @@ import Logo from "../components/Logo.astro"
     height: 100vh;
   }
   .title {
-    line-height: 0;
-    font-size: 201.56px;
+    
+    font-size: 12.5rem;
     font-weight: 400;
-    line-height: 241.88px;
+    
     letter-spacing: 0.01em;
     text-align: center;
     text-decoration-skip-ink: none;
@@ -49,7 +49,7 @@ import Logo from "../components/Logo.astro"
       height: 100px;
       font-family: 'Oswald';
       border-radius: 50px;
-      font-size: 72px;
+      font-size: 4.5rem;
       font-weight: bold;
       color: #FFFBFB;
       background-image: linear-gradient(#683B5C, #312646);
@@ -94,5 +94,37 @@ import Logo from "../components/Logo.astro"
     50% {
       transform: translateY(-10px);
     }
+  }
+
+  @media (max-width: 1200px){
+    .float {
+    font-size: medium;
+  }
+
+  .title {
+    font-size: 8rem;
+  }
+
+  .start-button{
+      width: 230px;
+      height: 75px;
+      font-size: 2rem;
+  }
+  }
+
+   @media (max-width: 600px){
+  
+
+  .title {
+    font-size: 6rem;
+  }
+
+  .start-button{
+      width: 130px;
+      height: 50px;
+      font-size: 1rem;
+  }
+
+  
   }
 </style>

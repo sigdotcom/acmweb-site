@@ -4,13 +4,10 @@ import Logo from "../components/Logo.astro"
 
 <div id="join" class="container">
   <span class="title">HOW TO JOIN</span>
-  <div class="row">
+  <div class="joinContent">
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales dolor vel lobortis porta. 
-      Donec mollis ante sed rhoncus lobortis. Nunc pharetra blandit lorem, et porttitor nisl scelerisque vel. 
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-      Phasellus imperdiet tempus nibh quis tempor. Aliquam erat volutpat. In maximus ullamcorper auctor.
-      Donec tincidunt id orci et varius.
+      If you are intrested in joining you can click <a href="https://discord.gg/QUGa4MRBtg" target="_blank">this link</a> to join our discord so you can get weekly updates on the club and any extra information.
+      To add to this we have meetings every Tuesday from 5pm to 6pm inside room <strong>CS220</strong>. Anyone is welcome to join regardless of past expirence, as we welcome all skill levels even if you've never coded before we will help you out.
     </p>
     <Logo/>
   </div>
@@ -31,7 +28,7 @@ import Logo from "../components/Logo.astro"
     height: 100vh;
   }
   .title {
-    font-size: 98.42px;
+    font-size: 6rem;
     font-weight: 500;
     line-height: 145.86px;
     text-align: left;
@@ -39,14 +36,14 @@ import Logo from "../components/Logo.astro"
   }
   p {
     width: 30vw;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 300;
     line-height: 35.57px;
     text-align: center;
     text-decoration-skip-ink: none;
     margin-right: 3em;
   }
-  .row {
+  .joinContent {
     display: flex;
     flex-direction: row;
   }
@@ -71,4 +68,44 @@ import Logo from "../components/Logo.astro"
       transform: translateY(-10px);
     }
   }
+
+   @media (min-width: 1800px){
+  
+  p {
+    font-size: 2rem;
+  }
+
+
+  }
+
+  @media (max-width: 1200px){
+   .title {
+    font-size: 3rem;
+  }
+  p {
+    
+    font-size: 1.2rem;
+  }
+   .float {
+    font-size: medium;
+  }
+  
+}
+  @media (max-width: 600px){
+   .title {
+    font-size: 1.5rem;
+  }
+  p {
+    
+    font-size: 1rem;
+    width: 75%;
+    margin-right: 0;
+  }
+  .joinContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+} 
 </style>
