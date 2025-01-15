@@ -50,11 +50,10 @@ import Join from './join.astro';
       }
     }
 
-    setMargin(window.scrollY);
+    navbar.style.marginTop = "-100vh";
 
     document.addEventListener("scroll", (e) => {
       setMargin(window.scrollY);
     });
-
   })();
 </script>
