@@ -6,5 +6,6 @@ import react from '@astrojs/react';
 export default defineConfig({
   integrations: [react()],
   site: 'https://sigdotcom.github.io',
-  base: 'acmweb-site'
+  base: 'acmweb-site',
+  output: 'static',
 });
