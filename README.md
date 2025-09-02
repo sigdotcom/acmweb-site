@@ -1,4 +1,7 @@
 # ACM Web Site
+This is the GitHub repository for the Missouri S&T ACM web club website.
+
+You can access it through the live link by [clicking here](https://sigdotcom.github.io/acmweb-site/) or copying the link: https://sigdotcom.github.io/acmweb-site/
 
 ## Getting Started
 
